@@ -1,0 +1,5 @@
+##EMAIL
+object= Objet de l'email
+Salut,
+Bonne journee
+##EMAIL
