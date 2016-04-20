@@ -5,7 +5,7 @@ import java.io.*;
 import java.net.Socket;
 
 /**
- * The goal of the SMTPCLient class is to wrapp all the smpt protocole in one class
+ * The goal of the SMTPClient class is to wrap all the SMTP protocol in one class
  * @author Madolyne Dupraz & Julien Leroy
  */
 public class SMTPClient
@@ -29,7 +29,7 @@ public class SMTPClient
     }
 
     /**
-     * Write the String s on the socket, ended all the liens with <CR><LF> and flush
+     * Write the String s on the socket, ended all the lines with <CR><LF> and flush
      *
      * @param s String to write
      * @throws IOException problem when writing on the stream
@@ -43,7 +43,7 @@ public class SMTPClient
     /**
      * Read on the socket and return it
      *
-     * @return the readed String
+     * @return the read String
      * @throws IOException problem when reading on the stream
      */
     private String read() throws IOException

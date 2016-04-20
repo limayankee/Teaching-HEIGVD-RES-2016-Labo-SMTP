@@ -3,7 +3,7 @@
 package model;
 
 /**
- * This calss is a representation of an email, it has a sender, a destionators table, an object and the message/data
+ * This class is a representation of an email, it has a sender, a recipients table, an object and the message/data
  * @author Madolyne Dupraz & Julien Leroy
  */
 public class Email
@@ -22,7 +22,7 @@ public class Email
     }
 
     /**
-     * @return render
+     * @return sender
      */
     public String sender()
     {
@@ -30,7 +30,7 @@ public class Email
     }
 
     /**
-     * @return dest table
+     * @return recipients table
      */
     public String[] recipients() { return recipients; }
 

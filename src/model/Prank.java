@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class corresponds to a prank in the file, each prank got an object/title and message.
+ * This class corresponds to a prank in the file, each prank got an object and message/data.
  * @author Madolyne Dupraz & Julien Leroy
  */
 public class Prank
@@ -14,9 +14,9 @@ public class Prank
     private String object;
     private String prank;
 
-    public Prank(String title, String prank)
+    public Prank(String object, String prank)
     {
-        this.object = title;
+        this.object = object;
         this.prank = prank;
     }
 
@@ -31,7 +31,7 @@ public class Prank
     public String prank() { return prank; }
 
     /**
-     * This methode read from the file and make a pranks table
+     * This method read from the file and make a pranks table
      * @param file file to read from
      * @return A table with the pranks
      * @throws IOException problem when reading from the file

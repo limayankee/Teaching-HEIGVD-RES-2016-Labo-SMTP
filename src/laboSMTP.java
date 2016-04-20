@@ -14,8 +14,9 @@ import java.util.Random;
 /**
  * This class is the main class of the project.
  * This class read the email addresses (2 arg argv[1]) and the pranks (3 arg, argv[2]) from the files
- * With the email addresse it generates groups with one sender and minimum 3 recipients the number of groups is the first
+ * With the email addresses it generates groups with one sender and minimum 2 recipients. The number of groups is the first
  * arg of the application.
+ * The host address is the argv[3], the port number is the argv[4] and the domain for the EHLO is argv[5]
  *
  * @author Madolyne Dupraz & Julien Leroy
  */
@@ -23,11 +24,11 @@ public class LaboSMTP
 {
     private int nbGroups;
 
-    private List<String> emailAddrs = new ArrayList<>(); // Table with the email address read from the file
+    private List<String> emailAddrs = new ArrayList<>(); // Table with the email addresses read from the file
 
     private List<Prank> pranks = new ArrayList<>(); // Table with all the pranks
 
-    private Email emails[]; // Table with email's contunt: sender, dests, object and prank
+    private Email emails[]; // Table with email's content: sender, recipients, object and prank
 
     private Group groups[]; // Table with the groups
 
@@ -62,7 +63,7 @@ public class LaboSMTP
 
 
     /**
-     * This method checks if there is enought email addresses for the number of groups
+     * This method checks if there is enough email addresses for the number of groups
      */
     private void checkGroupsNb()
     {
@@ -72,7 +73,7 @@ public class LaboSMTP
 
 
     /**
-     * This method read the pranks form the file
+     * This method read the pranks from the file
      * @param file file to read from
      * @throws IOException problem with the reading
      */
@@ -83,7 +84,7 @@ public class LaboSMTP
 
 
     /**
-     * This method makes emails with groups as sender and recever and the pranks as object and data
+     * This method makes emails with groups as sender and receivers and the pranks as object and data
      */
     private void makeEmails()
     {
@@ -135,7 +136,7 @@ public class LaboSMTP
 
         laboSMTP.makeEmails();
 
-        SMTPClient client = new SMTPClient("localhost", 25, "localhost");
+        SMTPClient client = new SMTPClient(argv[3], Integer.parseInt(argv[4]), argv[5]);
 
         client.connect();
 

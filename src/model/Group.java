@@ -17,21 +17,21 @@ public class Group {
     /**
      * When the group as no master, it's add the person to master.
      * And when he has one it add to the slaves
-     * @param preson the preson to add to the group
+     * @param person the preson to add to the group
      */
-    public void add(String preson)
+    public void add(String person)
     {
         if (master == null)
-            master = preson;
+            master = person;
         else
-            addSlave(preson);
+            addSlave(person);
 
     }
 
 
     /**
      * Add a person to the slaves
-     * @param slave preson to add to the slaves
+     * @param slave person to add to the slaves
      */
     public void addSlave(String slave)
     {
@@ -60,8 +60,8 @@ public class Group {
     /**
      * This method generate "nbGroups" number of groups with the string in the personList
      * A person from the list can only be in one group.
-     * It's shuffle the presonList first
-     * @param nbGroups number of groups to generats
+     * It's shuffle the personList first
+     * @param nbGroups number of groups to generates
      * @param personList List of String tu use
      * @return a table with the generated groups
      */
