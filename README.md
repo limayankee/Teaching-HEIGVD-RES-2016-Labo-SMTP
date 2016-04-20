@@ -40,7 +40,7 @@ To send the emails to your victims open a Terminal on the repository. go in the 
 
 ### Installation of the Mock server
 
-  1. Clone the repo on your PC and go to the cloned report /release  
+  1. Clone the repo on your PC and go to the cloned repository /release  
       `git clone https://github.com/tweakers-dev/MockMock`  
       `cd MockMock/release`
   1. Run the server with:`java -jar MockMock.jar`  
