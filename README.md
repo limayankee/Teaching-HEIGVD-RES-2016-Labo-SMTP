@@ -23,12 +23,20 @@ It has to start with this separator: `##EMAIL` and end with it too, and each ema
 
 The programm has 3 arguments; the first one is the number of groups you want, the second is the file that contains the emails, and the last one is the file which contains the email messages.   
 
-To send the emails to your victims open a Terminal on the repository. go in the folder out/production/Teaching-HEIGVD-RES-2016-Labo-SMTP/ and write `java LaboSMTP` following by the 3 arguments. 
+To send the emails to your victims open a Terminal on the repository. go in the folder out/production/Teaching-HEIGVD-RES-2016-Labo-SMTP/ and write `java LaboSMTP` following by the 3 arguments.
 
 
 ### Implementation
 
-  
+![Diagram](https://raw.githubusercontent.com/limayankee/Teaching-HEIGVD-RES-2016-Labo-SMTP/master/res_SMTP.png "Class Diagram")
+
+  For the laboratory, we named the main class as LaboSMTP. This class contains a table of email addresses and pranks. Those are read from text files. The Email class is a representation of an email, it has a sender, a table of recipients, an object and a message. We got a Group class which got a static method to generate N groups randomly from a list of persons, the N can be set. The main class generates emails with a group as sender, recipients and a prank as object and message. The main create a SMTPCLient and connects to the SMTP server then use it to send the emails.
+
+  #### Client - Server communication
+  ![Client-Server](https://raw.githubusercontent.com/limayankee/Teaching-HEIGVD-RES-2016-Labo-SMTP/master/screen_shot.png "Client Server communication")
+
+
+
 
 ### Installation of the Mock server
 
