@@ -21,10 +21,10 @@ put_here_the_2nd_email_message
 
 It has to start with this separator: `##EMAIL` and end with it too, and each email are separated with this separator as well.    
 
-The programm has 3 arguments; the first one is the number of groups you want, the second is the file that contains the emails, and the last one is the file which contains the email messages.   
+The programm has 6 arguments; the first one is the number of groups you want, the second is the file that contains the emails, the third one is the file which contains the email messages, the fourth one is the address of the SMTP server, the fifth is the port of the SMTP server and the last one is the domain of the SMTP client, used in the `EHLO` command.   
 
 To send the emails to your victims open a Terminal on the repository. First go in the folder /src and write the following command: `javac LaboSMTP`. 
-Then run `java LaboSMTP` following by the 3 arguments.
+Then run `java LaboSMTP` following by the 6 arguments.
 
 
 ### Implementation
