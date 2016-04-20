@@ -24,7 +24,7 @@ It has to start with this separator: `##EMAIL` and end with it too, and each ema
 The programm has 3 arguments; the first one is the number of groups you want, the second is the file that contains the emails, and the last one is the file which contains the email messages.   
 
 To send the emails to your victims open a Terminal on the repository. First go in the folder /src and write the following command: `javac LaboSMTP`. 
-Then go in the folder ../out/production/Teaching-HEIGVD-RES-2016-Labo-SMTP/ and write `java LaboSMTP` following by the 3 arguments.
+Then run `java LaboSMTP` following by the 3 arguments.
 
 
 ### Implementation
