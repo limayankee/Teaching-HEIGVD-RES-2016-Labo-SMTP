@@ -9,6 +9,20 @@ ____
 
 ### How to use it
 
+First of all you will need different files. The first one will contain a list of email addresses, one email address per line. The seconde file will contain the email messages and their objects. You will have to respect the following structure:       
+##EMAIL    
+object= put_here_the_object_of_the_email   
+put_here_the_email_message    
+it_can_be_written_in_different_lines   
+##EMAIL    
+object= put_here_the_object_of_the_2nd_email   
+put_here_the_2nd_email_message    
+##EMAIL    
+
+And so on. You can have only one message, or many.    
+
+the programm has 3 arguments; the first one is the number of groups you want, the second is the file that contains the emails, and the last one is the file which contains the email messages.    
+
 ### Implementation
 
   
