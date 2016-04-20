@@ -21,7 +21,10 @@ put_here_the_2nd_email_message
 
 It has to start with this separator: `##EMAIL` and end with it too, and each email are separated with this separator as well.    
 
-the programm has 3 arguments; the first one is the number of groups you want, the second is the file that contains the emails, and the last one is the file which contains the email messages.    
+The programm has 3 arguments; the first one is the number of groups you want, the second is the file that contains the emails, and the last one is the file which contains the email messages.   
+
+To send the emails to your victims open a Terminal on the repository. go in the folder out/production/Teaching-HEIGVD-RES-2016-Labo-SMTP/ and write `java LaboSMTP` following by the 3 arguments. 
+
 
 ### Implementation
 
